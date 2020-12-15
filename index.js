@@ -22,12 +22,12 @@ const { google } = require('googleapis')
 const { OAuth2 } = google.auth
 
 const oAuth2Client = new OAuth2(
-  '365485670929-4bcibh5oro817koblavv4ii40sj338r9.apps.googleusercontent.com',
-  'AJlxioEwhcjjxF8QBM4lZSnT'
+  'AUTHENTICATION CODE',
+  'SECRET KEY'
 )
 
 oAuth2Client.setCredentials({
-  refresh_token: '1//04ubtT4Z6YfCdCgYIARAAGAQSNwF-L9Ir2Lnb6I-PzY30n0aik8LLSJWDQPh4_yx0_STKJRgDqerwT8o6PjnesMbPZ5uyguKi6lU',
+  refresh_token: 'REFRESH TOKEN GOES HERE',
 })
 
 const calendar = google.calendar({ version: 'v3', auth: oAuth2Client })
